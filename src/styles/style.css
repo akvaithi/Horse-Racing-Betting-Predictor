@@ -1,3 +1,17 @@
-h1{
-    color: red
-}
+.label {
+    width: 681px;
+    height: 426px;
+  }
+  
+  .label .text-wrapper {
+    position: fixed;
+    width: 681px;
+    top: 0;
+    left: 0;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 100px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
