@@ -1,16 +1,47 @@
-.label {
-    width: 681px;
-    height: 426px;
+.desktop {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
   
-  .label .text-wrapper {
-    position: fixed;
-    width: 681px;
-    top: 0;
-    left: 0;
+  .desktop .div {
+    background-color: #ffffff;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
+  }
+  
+  .desktop .text-wrapper {
+    position: absolute;
+    width: 622px;
+    top: 109px;
+    left: 327px;
     font-family: "Inter-Regular", Helvetica;
     font-weight: 400;
     color: #000000;
+    font-size: 100px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .desktop .overlap-group {
+    position: absolute;
+    width: 320px;
+    height: 151px;
+    top: 562px;
+    left: 560px;
+    background-color: #400000;
+  }
+  
+  .desktop .text-wrapper-2 {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
     font-size: 100px;
     letter-spacing: 0;
     line-height: normal;
