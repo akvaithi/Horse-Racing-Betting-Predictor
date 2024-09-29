@@ -1,0 +1,128 @@
+<style>
+    .contact-section { background-color: #fff; display: flex; padding-bottom: 64px; flex-direction: column; overflow: hidden; }
+    .header { background-color: #d9d9d9; display: flex; width: 100%; gap: 20px; font-family: 'Kantumruy Pro', sans-serif; color: #000; font-weight: 400; flex-wrap: wrap; justify-content: space-between; padding: 15px 33px 15px 13px; }
+    @media (max-width: 991px) { .header { max-width: 100%; padding-right: 20px; } }
+    .nav-left { align-self: start; display: flex; align-items: center; gap: 28px; font-size: 40px; }
+    .logo { aspect-ratio: 0.81; object-fit: contain; object-position: center; width: 58px; align-self: stretch; margin: auto 0; }
+    .icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 99px; align-self: stretch; }
+    .nav-item { align-self: stretch; flex-basis: auto; margin: auto 0; }
+    .nav-right { display: flex; gap: 40px 66px; font-size: 25px; }
+    .nav-column { display: flex; flex-direction: column; white-space: nowrap; }
+    @media (max-width: 991px) { .nav-column { white-space: initial; } }
+    .nav-icon { aspect-ratio: 0.83; object-fit: contain; object-position: center; width: 49px; align-self: center; }
+    .nav-text { margin-top: 16px; }
+    .section-title { align-self: center; display: flex; margin-top: 49px; flex-direction: column; color: #fff; justify-content: start; font: 500 40px 'Space Grotesk', sans-serif; }
+    @media (max-width: 991px) { .section-title { margin-top: 40px; } }
+    .title-label { border-radius: 7px; background-color: #4d0909; padding: 0 7px; }
+    .contact-container { align-self: start; display: flex; margin-top: 39px; padding-left: 78px; align-items: center; gap: -367px; justify-content: start; }
+    @media (max-width: 991px) { .contact-container { padding-left: 20px; } }
+    .contact-wrapper { align-self: stretch; min-width: 240px; width: 1594px; margin: auto 0; }
+    @media (max-width: 991px) { .contact-wrapper { max-width: 100%; } }
+    .contact-content { gap: 20px; display: flex; }
+    @media (max-width: 991px) { .contact-content { flex-direction: column; align-items: stretch; gap: 0px; } }
+    .form-column { display: flex; flex-direction: column; line-height: normal; width: 72%; margin-left: 0px; }
+    @media (max-width: 991px) { .form-column { width: 100%; } }
+    .form-block { align-items: start; border-radius: 45px; background: var(--Grey, #f3f3f3); display: flex; margin-right: -367px; min-height: 719px; flex-grow: 1; gap: 10px; justify-content: start; flex-wrap: wrap; padding: 60px 100px 26px; }
+    @media (max-width: 991px) { .form-block { padding: 0 20px; } }
+    .contact-form { display: flex; min-width: 240px; flex-direction: column; justify-content: start; width: 556px; }
+    @media (max-width: 991px) { .contact-form { max-width: 100%; } }
+    .radio-group { align-self: start; display: flex; align-items: start; gap: 35px; justify-content: start; }
+    .radio-option { border-radius: 0; display: flex; align-items: flex-start; gap: 13px; width: 96px; }
+    .radio-button { border-radius: 29px; background-color: #fff; align-self: start; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0 6px; border: 1px solid #000; }
+    .radio-indicator { background-color: #4d1616; border-radius: 50%; display: flex; width: 16px; height: 16px; }
+    .radio-label { color: #000; margin: auto 0; font: 400 18px 'Space Grotesk', sans-serif; }
+    .form-fields { display: flex; margin-top: 40px; max-width: 100%; width: 556px; flex-direction: column; font-family: 'Space Grotesk', sans-serif; font-weight: 400; white-space: nowrap; justify-content: start; }
+    @media (max-width: 991px) { .form-fields { white-space: initial; } }
+    .form-field { display: flex; width: 100%; max-width: 556px; flex-direction: column; justify-content: start; margin-bottom: 25px; }
+    @media (max-width: 991px) { .form-field { max-width: 100%; white-space: initial; } }
+    .field-label { color: #000; font-size: 16px; line-height: 28px; }
+    .field-input { border-radius: 14px; background-color: #fff; margin-top: 5px; width: 100%; gap: 10px; overflow: hidden; font-size: 18px; color: #898989; padding: 18px 30px; border: 1px solid #000; }
+    @media (max-width: 991px) { .field-input { white-space: initial; padding: 0 20px; } }
+    .message-field { min-height: 223px; }
+    .message-input { min-height: 190px; padding: 18px 30px; }
+    @media (max-width: 991px) { .message-input { padding: 18px 20px; } }
+    .submit-button { align-self: stretch; border-radius: 14px; background-color: #350808; margin-top: 40px; max-width: 100%; width: 556px; gap: 10px; color: #fff; text-align: center; padding: 20px 35px; font: 400 20px/1.4 'Space Grotesk', -apple-system, Roboto, Helvetica, sans-serif; }
+    @media (max-width: 991px) { .submit-button { padding: 20px; } }
+    .form-description { color: #000; width: 323px; font: 400 18px 'Space Grotesk', sans-serif; }
+    .image-column { display: flex; flex-direction: column; line-height: normal; width: 28%; margin-left: 20px; }
+    @media (max-width: 991px) { .image-column { width: 100%; } }
+    .contact-image { aspect-ratio: 0.69; object-fit: contain; object-position: center; width: 100%; border-radius: 0; margin-top: 5px; }
+    @media (max-width: 991px) { .contact-image { max-width: 100%; } }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    </style>
+    
+    <section class="contact-section">
+      <header class="header">
+        <nav class="nav-left">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6309902b7a21efbdbfa2838362586c167b353df0b383f195b7bd8c0f30b98a73?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="Navigation icon" class="icon" />
+          <a href="liveStream.html" class="nav-item">Live Streams</a>
+          <a href="betting.html" class="nav-item">Betting</a>
+        </nav>
+        <nav class="nav-right">
+          <div class="nav-column">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1de0a7bda9d7a355dfa8dd83d86f57fdf7e2a5007f50784d08a2427603531454?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="About icon" class="nav-icon" />
+            <a href="about.html" class="nav-text">About</a>
+          </div>
+          <div class="nav-column">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/af999561cf3a2205dc63829695d7e76cfcb8c8a270d24a2544b572d04f7729f0?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="Contact icon" class="nav-icon" />
+            <a href="contact.html" class="nav-text">Contact Us</a>
+          </div>
+        </nav>
+      </header>
+      
+      <div class="section-title">
+        <h1 class="title-label">Contact Us</h1>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-wrapper">
+          <div class="contact-content">
+            <div class="form-column">
+              <div class="form-block">
+                <form class="contact-form">
+                  <div class="radio-group">
+                    <div class="radio-option">
+                      <div class="radio-button">
+                        <div class="radio-indicator"></div>
+                      </div>
+                      <label class="radio-label">
+                        <input type="radio" name="contact-reason" value="say-hi" class="visually-hidden" />
+                        Say Hi
+                      </label>
+                    </div>
+                    <div class="radio-option">
+                      <div class="radio-button"></div>
+                      <label class="radio-label">
+                        <input type="radio" name="contact-reason" value="get-quote" class="visually-hidden" />
+                        Get a Quote
+                      </label>
+                    </div>
+                  </div>
+                  
+                  <div class="form-fields">
+                    <div class="form-field">
+                      <label for="name" class="field-label">Name</label>
+                      <input type="text" id="name" name="name" class="field-input" placeholder="Name" />
+                    </div>
+                    <div class="form-field">
+                      <label for="email" class="field-label">Email*</label>
+                      <input type="email" id="email" name="email" class="field-input" placeholder="Email" required />
+                    </div>
+                    <div class="form-field message-field">
+                      <label for="message" class="field-label">Message*</label>
+                      <textarea id="message" name="message" class="field-input message-input" placeholder="Message" required></textarea>
+                    </div>
+                  </div>
+                  
+                  <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <p class="form-description">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+              </div>
+            </div>
+            <div class="image-column">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6b130ba0b288da52e4c4aed35bd734e167cbdad3e0a9b31a93960afc1ac1256?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="Contact illustration" class="contact-image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

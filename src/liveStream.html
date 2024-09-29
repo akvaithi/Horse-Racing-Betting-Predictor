@@ -1,16 +1,92 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-  </head>
-  <body>
-    <div class="desktop">
-      <div class="div-wrapper">
-        <div class="text-wrapper">embed live stream</div>
+<style>
+  .navigation {
+    background-color: #d9d9d9;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding: 15px 33px 15px 80px;
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #000;
+  }
+  
+  .nav-group {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    font-size: 40px;
+  }
+  
+  .nav-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 99px;
+  }
+  
+  .nav-link {
+    margin: auto 0;
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 66px;
+    font-size: 25px;
+  }
+  
+  .action-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .action-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 62px;
+  }
+  
+  .action-text {
+    margin-top: 16px;
+  }
+  
+  .content-area {
+    border-radius: 41px;
+    background-color: #d9d9d9;
+    margin: 40px auto 0;
+    width: 1286px;
+    max-width: 100%;
+    height: 725px;
+  }
+  
+  @media (max-width: 991px) {
+    .navigation {
+      padding: 15px 20px;
+    }
+  
+    .user-actions {
+      gap: 40px;
+    }
+  }
+</style>
+  
+<header class="navigation">
+  <nav class="nav-group">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6309902b7a21efbdbfa2838362586c167b353df0b383f195b7bd8c0f30b98a73?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="" class="nav-icon" />
+      <a href="liveStream.html" class="nav-link">Live Streams</a>
+      <a href="betting.html" class="nav-link">Betting</a>
+    </nav>
+    <div class="user-actions">
+      <div class="action-item">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1de0a7bda9d7a355dfa8dd83d86f57fdf7e2a5007f50784d08a2427603531454?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="" class="action-icon" />
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+      <div class="action-item">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/af999561cf3a2205dc63829695d7e76cfcb8c8a270d24a2544b572d04f7729f0?placeholderIfAbsent=true&apiKey=7857f6bda09a4ec6a3bedceed26ece79" alt="" class="action-icon" />
+        <a href="contact.html" class="nav-link">Contact Us</a>
       </div>
     </div>
+  </header>
+  <main class="content-area" role="main" aria-label="Main content area">
     <iframe width="1677" height="823" src="https://www.youtube.com/embed/pwTFRsulL2k" title="America&#39;s Day at the Races - September 28, 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </body>
-</html>
+  </main>
