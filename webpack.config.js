@@ -17,9 +17,9 @@ module.exports = {
                 {from: './src/img', to: 'img'},
                 {from: './src/styles', to: 'styles'},
                 {from: './src/liveStream.html', to: 'liveStream.html'},
-                {from: './src/tensor/testCases.csv', to: 'tensor/testCases.csv'},
-                {from: './src/tensor/tensorPredictor.py', to: 'tensor/tensorPredictor.py'},
-                {from: './src/tensor/horseWinPredictor.h5', to: 'tensor/horseWinPredictor.h5'},
+                {from: './src/testCases.csv', to: 'testCases.csv'},
+                {from: './src/server.py', to: 'server.py'},
+                {from: './src/horseWinPredictor.h5', to: 'horseWinPredictor.h5'},
                 {from: './src/betting.html', to: 'betting.html'},
             ]
         })
