@@ -16,9 +16,29 @@
           <div class="text-wrapper-5">Contact Us</div>
         </div>
         <div class="overlap-group">
-          <a href="test.html" class="text-wrapper-6">Start Here!</a>
+          <a href="liveStream.html" class="text-wrapper-6">Start Here!</a>
         </div>
-        <img class="untitled-design" src="img/untitled-design-1.png" alt="Horse Betting AI" />
+        <img class="untitled-design" src="img/logo.png" alt="Horse Betting AI" />
+        <script>
+          async function sendData() {
+            const data = [
+              { column1: 1, column2: 2 },
+              { column1: 3, column2: 4 }
+            ];
+            const response = await fetch('http://127.0.0.1:5000/process-data', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            console.log(result);
+          }
+      
+          // Call the function to send data
+          sendData();
+        </script>
       </div>
     </div>
   </body>

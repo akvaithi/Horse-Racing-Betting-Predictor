@@ -16,7 +16,10 @@ module.exports = {
             patterns: [
                 {from: './src/img', to: 'img'},
                 {from: './src/styles', to: 'styles'},
-                {from: './src/test.html', to: 'test.html'}
+                {from: './src/liveStream.html', to: 'liveStream.html'},
+                {from: './src/tensor/testCases.csv', to: 'tensor/testCases.csv'},
+                {from: './src/tensor/tensorPredictor.py', to: 'tensor/tensorPredictor.py'},
+                {from: './src/tensor/horseWinPredictor.h5', to: 'tensor/horseWinPredictor.h5'},
             ]
         })
 
