@@ -20,6 +20,7 @@ module.exports = {
                 {from: './src/tensor/testCases.csv', to: 'tensor/testCases.csv'},
                 {from: './src/tensor/tensorPredictor.py', to: 'tensor/tensorPredictor.py'},
                 {from: './src/tensor/horseWinPredictor.h5', to: 'tensor/horseWinPredictor.h5'},
+                {from: './src/betting.html', to: 'betting.html'},
             ]
         })
 
