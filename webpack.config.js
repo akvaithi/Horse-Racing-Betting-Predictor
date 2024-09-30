@@ -15,12 +15,13 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 {from: './src/img', to: 'img'},
-                {from: './src/styles', to: 'styles'},
-                {from: './src/liveStream.html', to: 'liveStream.html'},
-                {from: './src/testCases.csv', to: 'testCases.csv'},
-                {from: './src/server.py', to: 'server.py'},
-                {from: './src/horseWinPredictor.h5', to: 'horseWinPredictor.h5'},
+                {from: './src/about.html', to: 'about.html'},
+                {from: './src/contact.html', to: 'contact.html'},
                 {from: './src/betting.html', to: 'betting.html'},
+                {from: './src/index.html', to: 'index.html'},
+                {from: './src/liveStream.html', to: 'liveStream.html'},
+                {from: './src/server.py', to: 'server.py'},
+                {from: './src/style.css', to: 'style.css'},
             ]
         })
 
